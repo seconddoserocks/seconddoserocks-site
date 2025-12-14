@@ -40,6 +40,8 @@ body {
 .tagline {
   color: #6df0ff;
   font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  opacity: 0.85;
 }
 
 /* PANELS */
