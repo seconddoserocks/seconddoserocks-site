@@ -1,1 +1,77 @@
+body {
+  background: #000;
+  color: #eee;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+}
 
+header {
+  padding: 2rem 0 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: 0.15em;
+  color: #f16cff;
+  margin: 0;
+}
+
+.tagline {
+  opacity: 0.8;
+  margin-top: 0.3rem;
+}
+
+section {
+  padding: 2.5rem 1rem;
+}
+
+.hero-img {
+  max-width: 700px;
+  width: 90%;
+  border-radius: 6px;
+}
+
+h2 {
+  color: #6df0ff;
+  margin-bottom: 1rem;
+}
+
+.album {
+  margin: 2rem 0;
+}
+
+.album-img {
+  width: 240px;
+  border-radius: 6px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  margin-top: 0.6rem;
+  background: linear-gradient(135deg, #f16cff, #6df0ff);
+  color: #000;
+  font-weight: bold;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.pills span {
+  display: inline-block;
+  border: 1px solid #333;
+  padding: 0.35rem 0.8rem;
+  border-radius: 20px;
+  margin: 0.3rem;
+}
+
+.email {
+  color: #6df0ff;
+  text-decoration: none;
+}
+
+footer {
+  padding: 1.5rem 0;
+  opacity: 0.6;
+  font-size: 0.85rem;
+}
