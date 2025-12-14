@@ -10,16 +10,16 @@ body {
 .top-nav {
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  padding: 1.2rem 0;
-  border-bottom: 1px solid #222;
+  gap: 3rem;
+  padding: 1.5rem 0;
+  border-bottom: 2px solid #222;
 }
 
 .top-nav a {
   color: #ccc;
   text-decoration: none;
-  font-size: 0.9rem;
-  letter-spacing: 0.08em;
+  font-size: 1rem;
+  letter-spacing: 0.09em;
 }
 
 .top-nav a:hover {
