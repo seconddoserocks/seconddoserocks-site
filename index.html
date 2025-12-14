@@ -1,1 +1,65 @@
-<html></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Second Dose | Official Site</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+
+<body>
+  <header>
+    <h1>SECOND DOSE</h1>
+    <p class="tagline">Born from riffs. Built on melody.</p>
+  </header>
+
+  <section>
+    <img src="images/hero.jpg" class="hero-img" alt="Second Dose" />
+  </section>
+
+  <section>
+    <h2>Music</h2>
+
+    <div class="album">
+      <img src="images/album-rise-above.jpg" class="album-img" />
+      <h3>RISE ABOVE</h3>
+      <a href="#" class="btn" target="_blank">Listen</a>
+    </div>
+
+    <div class="album">
+      <img src="images/album-under-repair.jpg" class="album-img" />
+      <h3>UNDER REPAIR</h3>
+      <a href="#" class="btn" target="_blank">Listen</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>EPK</h2>
+    <a href="docs/SecondDose-EPK.pdf" class="btn" target="_blank">Download EPK</a>
+    <a href="docs/StagePlot.pdf" class="btn" target="_blank">Stage Plot</a>
+  </section>
+
+  <section>
+    <h2>Influences</h2>
+    <div class="pills">
+      <span>Foo Fighters</span>
+      <span>STP</span>
+      <span>Alice In Chains</span>
+      <span>GNR</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p><a href="mailto:booking@seconddoserocks.com" class="email">booking@seconddoserocks.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Second Dose</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
