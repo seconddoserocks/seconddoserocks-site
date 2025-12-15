@@ -10,9 +10,9 @@ body {
 .top-nav {
   display: flex;
   justify-content: center;
-  gap: 3rem;
+  gap: 2.5rem;
   padding: 1.5rem 0;
-  border-top: 1px solid #222;
+  border-top: 2px solid #222;
   border-bottom: 2px solid #222;
 }
 
