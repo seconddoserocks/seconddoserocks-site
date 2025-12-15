@@ -6,35 +6,32 @@ body {
   text-align: center;
 }
 
-/* NAV */
-.top-nav {
+/* NAV (single source of truth) */
+.top-nav,
+header nav {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 2rem;
   padding: 1.5rem 0;
   border-top: 2px solid #222;
   border-bottom: 2px solid #222;
 }
 
-.top-nav a {
+.top-nav a,
+header nav a {
   color: #ddedec;
   text-decoration: none;
-  font-size: .75rem;
+  font-size: 0.75rem;
   letter-spacing: 0.09em;
+  text-transform: uppercase;
 }
 
-.top-nav a:hover {
+.top-nav a:hover,
+header nav a:hover {
   color: #6df0ff;
 }
 
-.nav-highlight {
-  color: #6df0ff;      /* slightly brighter */
-  font-weight: 500;    /* subtle emphasis */
-}
-
-.nav-highlight:hover {
-  color: #9af7ff;      /* pop on hover */
-}
 
 /* HERO */
 .hero {
@@ -99,6 +96,7 @@ footer {
   opacity: 0.6;
 }
 
+/* BIO PAGE */
 .bio-section {
   max-width: 900px;
   margin: 3rem auto;
@@ -129,32 +127,4 @@ footer {
   margin: 3rem auto;
   border: none;
   border-top: 1px solid #222;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2.2rem;
-  padding: 1.2rem 0;
-  font-family: 'Roboto', sans-serif;
-}
-
-.nav-item {
-  color: #cfcfcf;
-  text-decoration: none;
-  font-size: 0.95rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  opacity: 0.85;
-}
-
-.nav-item:hover {
-  color: #6df0ff;
-  opacity: 1;
-}
-
-.nav-highlight {
-  color: #6df0ff;
-  opacity: 1;
 }
