@@ -27,6 +27,15 @@ body {
   color: #6df0ff;
 }
 
+.nav-highlight {
+  color: #6df0ff;      /* slightly brighter */
+  font-weight: 500;    /* subtle emphasis */
+}
+
+.nav-highlight:hover {
+  color: #9af7ff;      /* pop on hover */
+}
+
 /* HERO */
 .hero {
   padding: 3rem 1rem 2rem;
