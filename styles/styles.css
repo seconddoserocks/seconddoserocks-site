@@ -82,3 +82,9 @@ body {
   font-weight: bold;
   border-radius: 4px;
 }
+
+footer {
+  margin: 2rem 0 1rem;
+  font-size: 0.85rem;
+  opacity: 0.6;
+}
