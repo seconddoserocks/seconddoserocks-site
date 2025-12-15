@@ -41,7 +41,7 @@ body {
 .tagline {
   color: #6df0ff;
   font-size: 1.1rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif, italic;
   opacity: 0.5;
 }
 
