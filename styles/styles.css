@@ -6,32 +6,35 @@ body {
   text-align: center;
 }
 
-/* NAV (single source of truth) */
-.top-nav,
-header nav {
+/* NAV */
+.top-nav {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 2rem;
   padding: 1.5rem 0;
   border-top: 2px solid #222;
   border-bottom: 2px solid #222;
 }
 
-.top-nav a,
-header nav a {
+.top-nav a {
   color: #ddedec;
   text-decoration: none;
-  font-size: 0.75rem;
+  font-size: .75rem;
   letter-spacing: 0.09em;
-  text-transform: uppercase;
 }
 
-.top-nav a:hover,
-header nav a:hover {
+.top-nav a:hover {
   color: #6df0ff;
 }
 
+.nav-highlight {
+  color: #6df0ff;      /* slightly brighter */
+  font-weight: 500;    /* subtle emphasis */
+}
+
+.nav-highlight:hover {
+  color: #9af7ff;      /* pop on hover */
+}
 
 /* HERO */
 .hero {
@@ -94,37 +97,4 @@ footer {
   margin: 2rem 0 1rem;
   font-size: 0.85rem;
   opacity: 0.6;
-}
-
-/* BIO PAGE */
-.bio-section {
-  max-width: 900px;
-  margin: 3rem auto;
-  padding: 0 1rem;
-}
-
-.bio-img {
-  max-width: 420px;
-  width: 100%;
-  margin: 1.5rem auto;
-  display: block;
-  border-radius: 6px;
-}
-
-.bio-text {
-  line-height: 1.6;
-  opacity: 0.9;
-}
-
-.bio-signoff {
-  margin-top: 1.5rem;
-  font-weight: 500;
-  opacity: 0.8;
-}
-
-.divider {
-  max-width: 700px;
-  margin: 3rem auto;
-  border: none;
-  border-top: 1px solid #222;
 }
