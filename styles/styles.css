@@ -67,7 +67,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 1.1rem;
-  padding: 1rem 1rem;
+  padding: 1rem 0;
   flex-wrap: wrap;
 }
 
@@ -105,6 +105,43 @@ footer {
   margin: 2rem 0 1rem;
   font-size: 0.85rem;
   opacity: 0.6;
+}
+
+/* BIO */
+.bio-section {
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.bio-text {
+  max-width: 600px;
+  margin: 0.75rem auto;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  opacity: 0.9;
+}
+
+.bio-img {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.bio-signoff {
+  margin-top: 1.25rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.divider {
+  max-width: 720px;
+  margin: 2rem auto;
+  border: none;
+  border-top: 1px solid #222;
 }
 
 /* STORE */
