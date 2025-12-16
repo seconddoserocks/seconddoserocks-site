@@ -194,3 +194,25 @@ footer {
   text-transform: uppercase;
 }
 
+.journal-link {
+  display: block;
+  padding: 0.75rem 0;
+  color: #ddedec;
+  text-decoration: none;
+  border-bottom: 1px solid #222;
+}
+
+.journal-link:hover {
+  color: #6df0ff; /* same teal as header */
+}
+
+.journal-date {
+  opacity: 0.55;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  margin-right: 0.75rem;
+}
+
+.journal-title {
+  opacity: 0.9;
+}
