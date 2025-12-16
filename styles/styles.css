@@ -98,3 +98,32 @@ footer {
   font-size: 0.85rem;
   opacity: 0.6;
 }
+
+.bio-section {
+  max-width: 720px;     /* narrower = sleeker */
+  margin: 2rem auto;    /* less vertical space */
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.bio-text {
+  max-width: 620px;     /* keeps paragraphs tight */
+  margin: 0.75rem auto;
+  line-height: 1.55;
+  opacity: 0.9;
+}
+
+.bio-img {
+  max-width: 320px;     /* smaller images */
+  width: 100%;
+  margin: 1rem auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.divider {
+  max-width: 720px;
+  margin: 2rem auto;
+  border: none;
+  border-top: 1px solid #222;
+}
