@@ -107,7 +107,7 @@ footer {
 }
 
 .bio-text {
-  max-width: 620px;     /* keeps paragraphs tight */
+  max-width: 600px;     /* keeps paragraphs tight */
   margin: 0.75rem auto;
   font-size: 0.85rem;
   line-height: 1.55;
