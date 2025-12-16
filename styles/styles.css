@@ -216,3 +216,36 @@ footer {
 .journal-title {
   opacity: 0.9;
 }
+
+/* BLOG POST BODY (only affects posts that use .blog-post) */
+.blog-post {
+  max-width: 700px;
+  margin: 2.5rem auto;
+  text-align: left;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.02rem;
+  line-height: 1.65;
+  letter-spacing: 0.01em;
+  color: #e8e8e8;
+}
+
+.blog-post h2 {
+  margin: 0 0 0.4rem;
+  font-family: Arial, sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.blog-date {
+  opacity: 0.55;
+  font-size: 0.85rem;
+  margin: 0 0 1.75rem;
+}
+
+.blog-post p {
+  margin: 0 0 1.05rem;
+}
+
+.blog-signoff {
+  margin-top: 2rem;
+  opacity: 0.9;
+}
