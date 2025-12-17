@@ -73,10 +73,11 @@ body {
 
 .panel {
   border: 1px solid #222;
-  padding: 2rem;
-  width: 250px;
+  padding: 1.25rem;   /* was 2rem */
+  width: 165px;       /* ~66% of 250px */
   background: #0b0b0b;
 }
+
 
 .panel h2 {
   color: #669999;
