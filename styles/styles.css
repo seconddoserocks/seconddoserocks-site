@@ -72,12 +72,15 @@ body {
 }
 
 .panel {
-  display: flex;                 /* NEW */
-  flex-direction: column;        /* NEW */
+  display: flex;
+  flex-direction: column;
   border: 1px solid #222;
   padding: 1rem 1.55rem;
   width: 225px;
   background: #0b0b0b;
+
+  /* keeps all buttons aligned to the bottom */
+  height: 220px;               /* tweak up/down as needed */
 }
 
 .panel h2 {
@@ -88,6 +91,9 @@ body {
 .panel p {
   font-size: 0.8rem;
   opacity: 0.7;
+
+  /* MORE space between text and button */
+  margin: 0 0 1.5rem;
 }
 
 /* BUTTON */
@@ -100,6 +106,12 @@ body {
   text-decoration: none;
   font-weight: bold;
   border-radius: 4px;
+}
+
+/* only affects buttons inside the homepage panels */
+.panel .btn {
+  margin-top: auto;            /* pushes button to bottom of the panel */
+  align-self: center;
 }
 
 /* FOOTER */
