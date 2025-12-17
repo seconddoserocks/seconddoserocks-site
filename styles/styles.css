@@ -72,12 +72,13 @@ body {
 }
 
 .panel {
+  display: flex;                 /* NEW */
+  flex-direction: column;        /* NEW */
   border: 1px solid #222;
   padding: 1rem 1.75rem;
-  width: 165px;       /* ~66% of 250px */
+  width: 165px;
   background: #0b0b0b;
 }
-
 
 .panel h2 {
   color: #669999;
@@ -92,16 +93,14 @@ body {
 /* BUTTON */
 .btn {
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: auto;              /* NEW: pushes button to bottom */
   padding: 0.6rem 1.2rem;
-  background-color: #669999;   /* matches "Music" */
-  color: #000;                 /* readable */
+  background-color: #669999;
+  color: #000;
   text-decoration: none;
   font-weight: bold;
   border-radius: 4px;
 }
-
-
 
 /* FOOTER */
 footer {
@@ -206,7 +205,7 @@ footer {
 }
 
 .journal-link:hover {
-  color: #6df0ff; /* same teal as header */
+  color: #6df0ff;
 }
 
 .journal-date {
@@ -214,15 +213,15 @@ footer {
   font-size: 0.85rem;
   letter-spacing: 0.06em;
   margin-right: 0.75rem;
-  color: #6df0ff
+  color: #6df0ff;
 }
 
 .journal-title {
   opacity: 0.9;
-  color: #6df0ff
+  color: #6df0ff;
 }
 
-/* BLOG POST BODY (only affects posts that use .blog-post) */
+/* BLOG POST BODY */
 .blog-post {
   max-width: 700px;
   margin: 2.5rem auto;
