@@ -48,6 +48,13 @@ body {
   padding: 3rem 1rem 2rem;
 }
 
+.hero-sdo {
+  max-width: 180px;     /* tweak up/down */
+  width: 100%;
+  margin: 1.25rem auto 0;
+  display: block;
+}
+
 .main-img {
   max-width: 420px;
   width: 90%;
