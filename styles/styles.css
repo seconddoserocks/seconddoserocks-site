@@ -79,23 +79,20 @@ body {
   width: 225px;
   height: 200px;            /* consistent card height */
   background: #0b0b0b;
-
-  /* small, consistent spacing between elements */
-  gap: 0.5rem;
 }
 
 .panel h2 {
   color: #669999;
-  margin: 0;                /* gap handles spacing */
+  margin: 0 0 0.5rem;
 }
 
 .panel p {
   font-size: 0.8rem;
   opacity: 0.7;
-  margin: 0;                /* gap handles spacing */
-
-  /* IMPORTANT: remove vertical centering that created dead space */
-  display: block;
+  margin: 0;
+  flex-grow: 1;             /* THIS is the key fix */
+  display: flex;
+  align-items: center;      /* centers text vertically within its zone */
 }
 
 /* BUTTON */
@@ -111,7 +108,7 @@ body {
 
 /* button behavior ONLY inside panels */
 .panel .btn {
-  margin-top: auto;         /* pins button to bottom */
+  margin-top: 0.75rem;      /* intentional, controlled gap */
   align-self: center;
 }
 
