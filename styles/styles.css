@@ -93,7 +93,7 @@ body {
 /* BUTTON */
 .btn {
   display: inline-block;
-  margin-top: auto;              /* NEW: pushes button to bottom */
+  margin-top: 1.75rem;
   padding: 0.6rem 1.2rem;
   background-color: #669999;
   color: #000;
