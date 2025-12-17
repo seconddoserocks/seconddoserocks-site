@@ -90,9 +90,16 @@ body {
 
 /* BUTTON */
 .btn {
-  background-color: #6df0ff;
-  color: #000;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #669999;   /* matches "Music" */
+  color: #000;                 /* readable */
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
 }
+
 
 
 /* FOOTER */
