@@ -207,8 +207,8 @@ footer {
 }
 
 .journal-date {
-  opacity: 0.75;
-  font-size: 0.9rem;
+  opacity: 0.9;
+  font-size: 0.85rem;
   letter-spacing: 0.06em;
   margin-right: 0.75rem;
   color: #6df0ff
