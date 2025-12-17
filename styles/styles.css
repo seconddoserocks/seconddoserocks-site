@@ -90,15 +90,10 @@ body {
 
 /* BUTTON */
 .btn {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.6rem 1.2rem;
-  background: 6df0ff;
+  background-color: #6df0ff;
   color: #000;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 4px;
 }
+
 
 /* FOOTER */
 footer {
