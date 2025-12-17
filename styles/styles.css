@@ -77,26 +77,27 @@ body {
   border: 1px solid #222;
   padding: 1rem 1.55rem;
   width: 225px;
+  height: 200px;            /* consistent card height */
   background: #0b0b0b;
-  height: 200px; /* fixed height (reduced to avoid huge dead space) */
 }
 
 .panel h2 {
   color: #669999;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin: 0 0 0.5rem;
 }
 
 .panel p {
   font-size: 0.8rem;
   opacity: 0.7;
-  margin: 0; /* prevents extra gap inflation */
+  margin: 0;
+  flex-grow: 1;             /* THIS is the key fix */
+  display: flex;
+  align-items: center;      /* centers text vertically within its zone */
 }
 
 /* BUTTON */
 .btn {
   display: inline-block;
-  margin-top: 1rem; /* for any non-panel usage */
   padding: 0.6rem 1.2rem;
   background-color: #669999;
   color: #000;
@@ -105,11 +106,10 @@ body {
   border-radius: 4px;
 }
 
-/* only affects buttons inside the homepage panels */
+/* button behavior ONLY inside panels */
 .panel .btn {
-  margin-top: auto;     /* pins button to bottom */
+  margin-top: 0.75rem;      /* intentional, controlled gap */
   align-self: center;
-  margin-bottom: 0.25rem; /* small breathing room above panel bottom */
 }
 
 /* FOOTER */
@@ -156,81 +156,6 @@ footer {
   border-top: 1px solid #222;
 }
 
-/* STORE */
-.store-sub {
-  opacity: 0.6;
-  margin: 0.5rem 0 2rem;
-}
-
-.merch-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.25rem;
-  margin-top: 1rem;
-}
-
-.merch-card {
-  border: 1px solid #222;
-  background: #0b0b0b;
-  padding: 1.25rem;
-  border-radius: 8px;
-}
-
-.merch-card h3 {
-  margin: 0.9rem 0 0.25rem;
-  font-size: 1rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-
-.merch-card p {
-  margin: 0;
-  opacity: 0.7;
-  font-size: 0.9rem;
-}
-
-.merch-img {
-  width: 100%;
-  height: 180px;
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.merch-img.placeholder {
-  border: 1px dashed #2a2a2a;
-  color: #6df0ff;
-  opacity: 0.7;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.journal-link {
-  display: block;
-  padding: 0.75rem 0;
-  color: #ddedec;
-  text-decoration: none;
-  border-bottom: 1px solid #222;
-}
-
-.journal-link:hover {
-  color: #6df0ff;
-}
-
-.journal-date {
-  opacity: 0.9;
-  font-size: 0.85rem;
-  letter-spacing: 0.06em;
-  margin-right: 0.75rem;
-  color: #6df0ff;
-}
-
-.journal-title {
-  opacity: 0.9;
-  color: #6df0ff;
-}
-
 /* BLOG POST BODY */
 .blog-post {
   max-width: 700px;
@@ -241,22 +166,6 @@ footer {
   line-height: 1.65;
   letter-spacing: 0.01em;
   color: #e8e8e8;
-}
-
-.blog-post h2 {
-  margin: 0 0 0.4rem;
-  font-family: Arial, sans-serif;
-  letter-spacing: 0.02em;
-}
-
-.blog-date {
-  opacity: 0.55;
-  font-size: 0.85rem;
-  margin: 0 0 1.75rem;
-}
-
-.blog-post p {
-  margin: 0 0 1.05rem;
 }
 
 .blog-signoff {
