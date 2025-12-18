@@ -45,13 +45,13 @@ body {
 
 /* HERO */
 .hero {
-  padding: 3rem 1rem 2rem;
+  padding: 3rem 1rem 0.75rem; /* CHANGED (was 3rem 1rem 2rem) */
 }
 
 .hero-sdo {
   max-width: 180px;     /* tweak up/down */
   width: 100%;
-  margin: 0.5rem auto 0;     /* CHANGED (was 1.25rem) */
+  margin: 0 auto;       /* CHANGED (removes extra vertical gap) */
   display: block;
 }
 
@@ -67,7 +67,7 @@ body {
   font-style: italic;
   font-family: 'Roboto', sans-serif;
   opacity: 0.5;
-  margin-bottom: 0.5rem;     /* ADDED */
+  margin: 0.25rem 0 0.25rem; /* CHANGED (was margin-bottom: 0.5rem) */
 }
 
 /* PANELS */
@@ -98,7 +98,7 @@ body {
   font-size: 0.8rem;
   opacity: 0.7;
   margin: 0;
-  flex-grow: 1;             /* THIS is the key fix */
+  flex-grow: 1;             /* keeps buttons aligned */
   display: flex;
   align-items: center;      /* centers text vertically within its zone */
 }
