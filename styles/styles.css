@@ -317,3 +317,142 @@ footer {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
+
+/* ---------------------------- */
+/* MUSIC PAGE (NEW)             */
+/* ---------------------------- */
+
+.page-title {
+  margin: 0;
+  color: #6df0ff;
+  letter-spacing: 0.02em;
+}
+
+.content-card {
+  border: 1px solid #222;
+  background: #0b0b0b;
+  padding: 1.25rem 1.55rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-title {
+  margin: 0 0 1rem;
+  color: #669999;
+  letter-spacing: 0.02em;
+}
+
+.latest-wrap {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.latest-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.latest-right {
+  max-width: 520px;
+  text-align: left;
+}
+
+.album-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.1rem;
+}
+
+.album-card {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  border: 1px solid #222;
+  background: #0a0a0a;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.album-meta {
+  text-align: left;
+  max-width: 560px;
+}
+
+.mini-title {
+  margin: 0 0 0.35rem;
+  color: #ddedec;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+}
+
+.body-copy {
+  margin: 0 0 0.85rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  line-height: 1.45;
+}
+
+.small-note {
+  margin: 0;
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+
+/* CD-ish rectangles (placeholder art blocks) */
+.album-art {
+  border: 1px solid #222;
+  background: #050505;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  min-width: 210px;
+}
+
+.album-art.cd-rect {
+  height: 120px;
+  width: 260px;
+}
+
+.album-art span {
+  color: #6df0ff;
+  opacity: 0.75;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+}
+
+/* Platform links */
+.platform-links {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.platform {
+  display: inline-block;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid #222;
+  background: #0b0b0b;
+  color: #6df0ff;
+  text-decoration: none;
+  font-size: 0.8rem;
+  opacity: 0.85;
+  border-radius: 4px;
+}
+
+.platform:hover {
+  opacity: 1;
+  border-color: #6df0ff;
+}
+
+/* Responsive */
+@media (min-width: 860px) {
+  .album-grid {
+    grid-template-columns: 1fr;
+  }
+}
