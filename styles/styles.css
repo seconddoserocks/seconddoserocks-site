@@ -45,13 +45,13 @@ body {
 
 /* HERO */
 .hero {
-  padding: 3rem 1rem 0.75rem; /* CHANGED (was 3rem 1rem 2rem) */
+  padding: 3rem 1rem 0.25rem; /* tighter below SDO pic (was 0.75rem) */
 }
 
 .hero-sdo {
-  max-width: 180px;     /* tweak up/down */
+  max-width: 180px;
   width: 100%;
-  margin: 0 auto;       /* CHANGED (removes extra vertical gap) */
+  margin: 0.1rem auto 0;     /* tighter above pic (was 0 auto) */
   display: block;
 }
 
@@ -67,7 +67,7 @@ body {
   font-style: italic;
   font-family: 'Roboto', sans-serif;
   opacity: 0.5;
-  margin: 0.25rem 0 0.25rem; /* CHANGED (was margin-bottom: 0.5rem) */
+  margin: 0.25rem 0 0.05rem;  /* tighter between tagline and pic */
 }
 
 /* PANELS */
@@ -75,7 +75,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 1.1rem;
-  padding: 1rem 0;
+  padding: 0.5rem 0 1rem;     /* tighter above panels (was 1rem 0) */
   flex-wrap: wrap;
 }
 
@@ -85,7 +85,7 @@ body {
   border: 1px solid #222;
   padding: 1rem 1.55rem;
   width: 225px;
-  height: 200px;            /* consistent card height */
+  height: 200px;
   background: #0b0b0b;
 }
 
@@ -98,9 +98,9 @@ body {
   font-size: 0.8rem;
   opacity: 0.7;
   margin: 0;
-  flex-grow: 1;             /* keeps buttons aligned */
+  flex-grow: 1;
   display: flex;
-  align-items: center;      /* centers text vertically within its zone */
+  align-items: center;
 }
 
 /* BUTTON */
@@ -114,9 +114,8 @@ body {
   border-radius: 4px;
 }
 
-/* button behavior ONLY inside panels */
 .panel .btn {
-  margin-top: 0.75rem;      /* intentional, controlled gap */
+  margin-top: 0.75rem;
   align-self: center;
 }
 
