@@ -1,6 +1,57 @@
+body {
+  margin: 0;
+  background: #000;
+  color: #eee;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* PAGE WIDTH CONTAINER */
+.page-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* NAV */
+.top-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1.5rem 0;
+  border-top: 2px solid #222;
+  border-bottom: 2px solid #222;
+}
+
+.top-nav a {
+  color: #ddedec;
+  text-decoration: none;
+  font-size: 0.75rem;
+  letter-spacing: 0.09em;
+}
+
+.top-nav a:hover {
+  color: #6df0ff;
+}
+
+.nav-highlight {
+  color: #6df0ff;
+  font-weight: 500;
+}
+
+.nav-highlight:hover {
+  color: #9af7ff;
+}
+
 /* HERO */
 .hero {
-  padding: 3rem 1rem 0.25rem;
+  padding: 3rem 1rem 0.25rem; /* tight bottom */
+}
+
+.main-img {
+  max-width: 420px;
+  width: 90%;
+  height: auto;
 }
 
 .tagline {
@@ -9,12 +60,13 @@
   font-style: italic;
   font-family: 'Roboto', sans-serif;
   opacity: 0.75;
-  margin: 0.25rem 0 0.1rem;
+  margin: 0.25rem 0 0.1rem; /* tight under tagline */
 }
 
 /* SDO GENIUS BLOCK */
 .sdo-block {
-  margin: 0 auto 0.25rem;   /* tight above & below */
+  margin: 0 auto 0.25rem;
+  line-height: 0; /* removes image baseline gap */
 }
 
 .hero-sdo {
@@ -24,10 +76,10 @@
   margin: 0 auto;
 }
 
-/* blog link directly under image */
 .sdo-link {
   display: inline-block;
-  margin-top: 0.15rem;      /* THIS is the key line */
+  margin-top: 0.15rem;
+  line-height: 1.2;
   color: #6df0ff;
   text-decoration: none;
   opacity: 0.8;
@@ -43,6 +95,49 @@
   display: flex;
   justify-content: center;
   gap: 1.1rem;
-  padding: 0.25rem 0 1rem;  /* tighter above panels */
+  padding: 0.25rem 0 1rem; /* tight above panels */
   flex-wrap: wrap;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #222;
+  padding: 1rem 1.55rem;
+  width: 225px;
+  height: 200px;
+  background: #0b0b0b;
+}
+
+.panel h2 {
+  color: #669999;
+  margin: 0 0 0.5rem;
+}
+
+.panel p {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin: 0;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #669999;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  align-self: center;
+}
+
+/* FOOTER */
+footer {
+  margin: 4rem 0 1rem;
+  font-size: 0.85rem;
+  opacity: 0.6;
 }
