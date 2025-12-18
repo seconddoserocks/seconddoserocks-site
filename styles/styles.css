@@ -66,21 +66,22 @@ body {
 /* SDO GENIUS BLOCK */
 .sdo-block {
   margin: 0 auto 0.25rem;
-  line-height: 0; /* removes image baseline gap */
 }
 
+/* kill ONLY the image baseline gap (not the whole block) */
 .hero-sdo {
   max-width: 180px;
   width: 100%;
   display: block;
   margin: 0 auto;
+  vertical-align: middle; /* helps baseline weirdness */
 }
 
 .sdo-link {
   display: inline-block;
   margin-top: 0.33rem;
   margin-bottom: 1.25rem;
-  font-size: .75rem;
+  font-size: 0.75rem;
   line-height: 1.2;
   color: #6df0ff;
   text-decoration: none;
@@ -142,4 +143,46 @@ footer {
   margin: 4rem 0 1rem;
   font-size: 0.85rem;
   opacity: 0.6;
+}
+
+/* ---------------------------- */
+/* BIO PAGE STYLES (RESTORED)   */
+/* ---------------------------- */
+.bio-section {
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.bio-img {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.bio-text {
+  max-width: 600px;
+  margin: 0.75rem auto;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  opacity: 0.9;
+  text-align: left; /* reads better */
+}
+
+.bio-signoff {
+  margin-top: 1.25rem;
+  font-weight: 500;
+  opacity: 0.8;
+  text-align: left;
+}
+
+.divider {
+  max-width: 720px;
+  margin: 2rem auto;
+  border: none;
+  border-top: 1px solid #222;
 }
