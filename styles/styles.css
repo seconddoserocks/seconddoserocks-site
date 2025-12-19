@@ -473,6 +473,18 @@ footer {
   background: #000;
 }
 
+.video-image {
+  position: relative;
+}
+
+.video-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.55);
+}
+
 .latest-left .video-image {
   width: 420px;     /* pick the size you want */
   max-width: 100%;
