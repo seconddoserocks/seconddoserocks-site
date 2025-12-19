@@ -457,6 +457,27 @@ footer {
   }
 }
 
+.video-image {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  border: 1px solid #222;
+  overflow: hidden;
+}
+
+.video-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.latest-left .video-image {
+  width: 420px;     /* pick the size you want */
+  max-width: 100%;
+  height: 236px;    /* 16:9-ish to look like a video slot */
+}
+
 .youtube-box {
   display: flex;
   align-items: center;
@@ -477,24 +498,4 @@ footer {
   color: #ff3355;
 }
 
-.video-image-link {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  border: 1px solid #222;
-  overflow: hidden;
-}
 
-.video-image-link img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.25s ease, opacity 0.25s ease;
-}
-
-.video-image-link:hover img {
-  transform: scale(1.03);
-  opacity: 0.92;
-}
