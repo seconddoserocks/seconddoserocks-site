@@ -63,80 +63,6 @@ body {
   margin: 0.25rem 0 1rem;
 }
 
-/* SDO GENIUS BLOCK */
-.sdo-block {
-  margin: 0 auto 0.25rem;
-}
-
-.hero-sdo {
-  max-width: 180px;
-  width: 100%;
-  display: block;
-  margin: 0 auto;
-  vertical-align: middle;
-}
-
-.sdo-link {
-  display: inline-block;
-  margin-top: 0.33rem;
-  margin-bottom: 1.25rem;
-  font-size: 0.75rem;
-  line-height: 1.2;
-  color: #6df0ff;
-  text-decoration: none;
-  opacity: 0.7;
-}
-
-.sdo-link:hover {
-  opacity: 1;
-  text-decoration: underline;
-}
-
-/* HOMEPAGE PANELS */
-.panels {
-  display: flex;
-  justify-content: center;
-  gap: 1.1rem;
-  padding: 0.25rem 0 1rem;
-  flex-wrap: wrap;
-}
-
-.panel {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #222;
-  padding: 1rem 1.55rem;
-  width: 225px;
-  height: 200px;
-  background: #0b0b0b;
-}
-
-.panel h2 {
-  color: #669999;
-  margin: 0 0 0.5rem;
-}
-
-.panel p {
-  font-size: 0.8rem;
-  opacity: 0.7;
-  margin: 0;
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-}
-
-/* BUTTON */
-.btn {
-  display: inline-block;
-  padding: 0.6rem 1.2rem;
-  background-color: #669999;
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 4px;
-  align-self: center;
-}
-
 /* FOOTER */
 footer {
   margin: 4rem 0 1rem;
@@ -145,129 +71,9 @@ footer {
 }
 
 /* ---------------------------- */
-/* BIO PAGE STYLES              */
-/* ---------------------------- */
-.bio-section {
-  max-width: 720px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-  text-align: center;
-}
-
-.bio-img {
-  max-width: 320px;
-  width: 100%;
-  height: auto;
-  margin: 1rem auto;
-  display: block;
-  border-radius: 8px;
-}
-
-.bio-text {
-  max-width: 600px;
-  margin: 0.75rem auto;
-  font-size: 0.85rem;
-  line-height: 1.55;
-  opacity: 0.9;
-  text-align: center;
-}
-
-.bio-signoff {
-  margin-top: 1.25rem;
-  font-weight: 500;
-  opacity: 0.8;
-  text-align: center;
-}
-
-.divider {
-  max-width: 720px;
-  margin: 2rem auto;
-  border: none;
-  border-top: 1px solid #222;
-}
-
-/* ---------------------------- */
-/* BLOG INDEX (blog.html)       */
-/* ---------------------------- */
-.journal-link {
-  display: block;
-  padding: 0.75rem 0;
-  color: #ddedec;
-  text-decoration: none;
-  border-bottom: 1px solid #222;
-}
-
-.journal-link:hover {
-  color: #6df0ff;
-}
-
-.journal-date {
-  opacity: 0.9;
-  font-size: 0.9rem;
-  letter-spacing: 0.02em;
-  color: #6df0ff;
-}
-
-/* ---------------------------- */
-/* BLOG POST (posts/001.html)   */
-/* ---------------------------- */
-.blog-post {
-  max-width: 700px;
-  margin: 2.5rem auto;
-  text-align: left;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1.02rem;
-  line-height: 1.65;
-  letter-spacing: 0.01em;
-  color: #e8e8e8;
-}
-
-.blog-date {
-  opacity: 0.55;
-  font-size: 0.85rem;
-  margin: 0 0 1.25rem;
-}
-
-.blog-post img {
-  max-width: 420px;
-  width: 100%;
-  height: auto;
-  margin: 1.25rem auto;
-  display: block;
-}
-
-.blog-signoff {
-  margin-top: 2rem;
-  opacity: 0.9;
-}
-
-/* ---------------------------- */
-/* INNER PAGE PANELS (music/store) */
-/* ---------------------------- */
-.page-panel {
-  border: 1px solid #222;
-  background: #0b0b0b;
-  padding: 1.5rem;
-  max-width: 700px;
-  margin: 1.1rem auto 0;
-  text-align: left;
-}
-
-.page-panel h2 {
-  color: #669999;
-  margin: 0 0 0.5rem;
-}
-
-.page-panel p {
-  margin: 0;
-  opacity: 0.8;
-  font-size: 0.9rem;
-  line-height: 1.5;
-}
-
-/* ---------------------------- */
 /* STORE GRID                   */
 /* ---------------------------- */
+
 .store-sub {
   opacity: 0.6;
   margin: 0.5rem 0 2rem;
@@ -283,13 +89,13 @@ footer {
 .merch-card {
   border: 1px solid #222;
   background: #0b0b0b;
-  padding: 1.25rem;
+  padding: 1.1rem;
   border-radius: 8px;
   text-align: left;
 }
 
 .merch-card h3 {
-  margin: 0.9rem 0 0.25rem;
+  margin: 0.75rem 0 0.25rem;
   font-size: 1rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -301,164 +107,20 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Keep the merch image box consistent */
+/* 🔥 TIGHTER IMAGE FRAME */
 .merch-img {
   width: 100%;
-  height: 260px;
+  height: 210px;          /* reduced from 260px */
   border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.merch-img.placeholder {
-  border: 1px dashed #2a2a2a;
-  color: #6df0ff;
-  opacity: 0.7;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
 /* ---------------------------- */
-/* MUSIC PAGE (NEW)             */
+/* FRAMED IMAGE (used by merch) */
 /* ---------------------------- */
 
-.page-title {
-  margin: 0;
-  color: #6df0ff;
-  letter-spacing: 0.02em;
-}
-
-.content-card {
-  border: 1px solid #222;
-  background: #0b0b0b;
-  padding: 1.25rem 1.55rem;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.section-title {
-  margin: 0 0 1rem;
-  color: #669999;
-  letter-spacing: 0.02em;
-}
-
-.latest-wrap {
-  display: flex;
-  gap: 1.25rem;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.latest-left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.latest-right {
-  max-width: 520px;
-  text-align: left;
-}
-
-.album-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.1rem;
-}
-
-.album-card {
-  display: flex;
-  gap: 1.25rem;
-  align-items: center;
-  border: 1px solid #222;
-  background: #0a0a0a;
-  padding: 1rem;
-  flex-wrap: wrap;
-}
-
-.album-meta {
-  text-align: left;
-  max-width: 560px;
-}
-
-.mini-title {
-  margin: 0 0 0.35rem;
-  color: #ddedec;
-  font-size: 1rem;
-  letter-spacing: 0.02em;
-}
-
-.body-copy {
-  margin: 0 0 0.85rem;
-  font-size: 0.9rem;
-  opacity: 0.8;
-  line-height: 1.45;
-}
-
-.small-note {
-  margin: 0;
-  font-size: 0.75rem;
-  opacity: 0.6;
-}
-
-/* CD-ish rectangles (placeholder art blocks) */
-.album-art {
-  border: 1px solid #222;
-  background: #050505;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.75rem;
-  min-width: 210px;
-}
-
-.album-art.cd-rect {
-  height: 120px;
-  width: 260px;
-}
-
-.album-art span {
-  color: #6df0ff;
-  opacity: 0.75;
-  font-size: 0.85rem;
-  letter-spacing: 0.02em;
-}
-
-/* Platform links */
-.platform-links {
-  display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-}
-
-.platform {
-  display: inline-block;
-  padding: 0.45rem 0.75rem;
-  border: 1px solid #222;
-  background: #0b0b0b;
-  color: #6df0ff;
-  text-decoration: none;
-  font-size: 0.8rem;
-  opacity: 0.85;
-  border-radius: 4px;
-}
-
-.platform:hover {
-  opacity: 1;
-  border-color: #6df0ff;
-}
-
-/* Responsive */
-@media (min-width: 860px) {
-  .album-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Framed image styling */
 .video-image {
   width: 100%;
   height: 100%;
@@ -469,55 +131,23 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 6px;           /* 🔥 tight inner spacing */
 }
 
 .video-image img {
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 88%;
+  max-height: 88%;
   width: auto;
   height: auto;
   object-fit: contain;
   display: block;
 }
 
+/* ✅ SOFTER INNER SHADOW */
 .video-image::after {
   content: "";
   position: absolute;
   inset: 0;
   pointer-events: none;
-  box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.55);
-}
-
-.latest-left .video-image {
-  width: 350px;
-  max-width: 100%;
-  height: 190px;
-}
-
-/* ✅ BEST FIX FOR YOUR SCREENSHOT:
-   shrink the 1st and 3rd merch images to match the vinyl's visual size */
-.merch-grid .merch-card:nth-child(1) .video-image img,
-.merch-grid .merch-card:nth-child(3) .video-image img {
-  max-width: 72%;
-  max-height: 72%;
-}
-
-.youtube-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  color: #ff0033;
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-decoration: none;
-  border: 1px solid #222;
-  transition: all 0.2s ease;
-}
-
-.youtube-box:hover {
-  background: #111;
-  color: #ff3355;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.45);
 }
