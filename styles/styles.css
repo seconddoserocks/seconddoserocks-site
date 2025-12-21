@@ -301,10 +301,10 @@ footer {
   font-size: 0.9rem;
 }
 
-/* ✅ BEST CHANGE: lock merch image area to a consistent size (matches vinyl look) */
+/* Keep the merch image box consistent */
 .merch-img {
   width: 100%;
-  height: 260px; /* was 180px — brings all tiles to the vinyl's visual scale */
+  height: 260px;
   border-radius: 6px;
   display: flex;
   align-items: center;
@@ -458,6 +458,7 @@ footer {
   }
 }
 
+/* Framed image styling */
 .video-image {
   width: 100%;
   height: 100%;
@@ -488,9 +489,17 @@ footer {
 }
 
 .latest-left .video-image {
-  width: 350px;     /* pick the size you want */
+  width: 350px;
   max-width: 100%;
-  height: 190px;    /* 16:9-ish to look like a video slot */
+  height: 190px;
+}
+
+/* ✅ BEST FIX FOR YOUR SCREENSHOT:
+   shrink the 1st and 3rd merch images to match the vinyl's visual size */
+.merch-grid .merch-card:nth-child(1) .video-image img,
+.merch-grid .merch-card:nth-child(3) .video-image img {
+  max-width: 72%;
+  max-height: 72%;
 }
 
 .youtube-box {
