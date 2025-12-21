@@ -491,6 +491,12 @@ footer {
   height: 236px;    /* 16:9-ish to look like a video slot */
 }
 
+.video-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .youtube-box {
   display: flex;
   align-items: center;
