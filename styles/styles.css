@@ -107,50 +107,53 @@ footer {
   font-size: 0.9rem;
 }
 
-/* ✅ FIX: stop forcing a tall black box */
+/* ✅ THE ACTUAL FIX:
+   Force all merch frames to identical size (no cropping, just letterboxing). */
 .merch-img {
   width: 100%;
-  height: auto;            /* was 210px */
+  aspect-ratio: 4 / 3;   /* <- pick 4/3 (or 1/1 if you want square) */
   border-radius: 6px;
+  overflow: hidden;      /* ensures shadow + border stay clean */
 }
 
 /* ---------------------------- */
 /* FRAMED IMAGE (used by merch) */
 /* ---------------------------- */
 
-/* ✅ FIX: frame should hug the image, not create a black mat */
+/* The frame */
 .video-image {
   width: 100%;
-  height: auto;            /* was 100% */
-  background: transparent; /* was #000 (the black mat) */
-  border: none;            /* move border to the image itself */
-  overflow: hidden;
-  position: relative;
-  display: block;          /* no flex-centering box */
-  padding: 0;              /* was 6px */
-}
-
-/* ✅ FIX: image defines the height, no artificial shrinking */
-.video-image img {
-  width: 100%;
-  height: auto;
-  max-width: 100%;         /* was 88% */
-  max-height: none;        /* was 88% */
-  object-fit: contain;
-  display: block;
-
-  /* frame styling on the image */
+  height: 100%;
+  background: #000;
   border: 1px solid #222;
   border-radius: 6px;
-  background: #000;        /* only matters if PNG has transparency */
+  overflow: hidden;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px;         /* tight-ish mat */
+  box-sizing: border-box;
 }
 
-/* ✅ SOFTER INNER SHADOW (applied on top of the image area) */
+/* The image inside the frame (no crop) */
+.video-image img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* ✅ Softer inner shadow (kept) */
 .video-image::after {
   content: "";
   position: absolute;
   inset: 0;
   pointer-events: none;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.45);
   border-radius: 6px;
+  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.35);
 }
