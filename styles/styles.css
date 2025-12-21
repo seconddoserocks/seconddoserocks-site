@@ -107,47 +107,50 @@ footer {
   font-size: 0.9rem;
 }
 
-/* 🔥 TIGHTER IMAGE FRAME */
+/* ✅ FIX: stop forcing a tall black box */
 .merch-img {
   width: 100%;
-  height: 210px;          /* reduced from 260px */
+  height: auto;            /* was 210px */
   border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* ---------------------------- */
 /* FRAMED IMAGE (used by merch) */
 /* ---------------------------- */
 
+/* ✅ FIX: frame should hug the image, not create a black mat */
 .video-image {
   width: 100%;
-  height: 100%;
-  background: #000;
-  border: 1px solid #222;
+  height: auto;            /* was 100% */
+  background: transparent; /* was #000 (the black mat) */
+  border: none;            /* move border to the image itself */
   overflow: hidden;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 6px;           /* 🔥 tight inner spacing */
+  display: block;          /* no flex-centering box */
+  padding: 0;              /* was 6px */
 }
 
+/* ✅ FIX: image defines the height, no artificial shrinking */
 .video-image img {
-  max-width: 88%;
-  max-height: 88%;
-  width: auto;
+  width: 100%;
   height: auto;
+  max-width: 100%;         /* was 88% */
+  max-height: none;        /* was 88% */
   object-fit: contain;
   display: block;
+
+  /* frame styling on the image */
+  border: 1px solid #222;
+  border-radius: 6px;
+  background: #000;        /* only matters if PNG has transparency */
 }
 
-/* ✅ SOFTER INNER SHADOW */
+/* ✅ SOFTER INNER SHADOW (applied on top of the image area) */
 .video-image::after {
   content: "";
   position: absolute;
   inset: 0;
   pointer-events: none;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.45);
+  border-radius: 6px;
 }
