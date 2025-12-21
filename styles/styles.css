@@ -301,9 +301,10 @@ footer {
   font-size: 0.9rem;
 }
 
+/* ✅ BEST CHANGE: lock merch image area to a consistent size (matches vinyl look) */
 .merch-img {
   width: 100%;
-  height: 180px;
+  height: 260px; /* was 180px — brings all tiles to the vinyl's visual scale */
   border-radius: 6px;
   display: flex;
   align-items: center;
@@ -457,16 +458,6 @@ footer {
   }
 }
 
-
-.video-image img {
-  max-width: 90%;
-  max-height: 90%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  display: block;
-}
-
 .video-image {
   width: 100%;
   height: 100%;
@@ -479,6 +470,14 @@ footer {
   justify-content: center;
 }
 
+.video-image img {
+  max-width: 90%;
+  max-height: 90%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
 
 .video-image::after {
   content: "";
@@ -492,12 +491,6 @@ footer {
   width: 350px;     /* pick the size you want */
   max-width: 100%;
   height: 190px;    /* 16:9-ish to look like a video slot */
-}
-
-.video-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .youtube-box {
@@ -519,5 +512,3 @@ footer {
   background: #111;
   color: #ff3355;
 }
-
-
