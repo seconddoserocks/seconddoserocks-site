@@ -457,25 +457,28 @@ footer {
   }
 }
 
+
+.video-image img {
+  max-width: 67%;
+  max-height: 67%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
 .video-image {
   width: 100%;
   height: 100%;
   background: #000;
   border: 1px solid #222;
   overflow: hidden;
-}
-
-.video-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-  background: #000;
-}
-
-.video-image {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 .video-image::after {
   content: "";
