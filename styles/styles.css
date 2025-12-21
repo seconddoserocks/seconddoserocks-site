@@ -459,8 +459,8 @@ footer {
 
 
 .video-image img {
-  max-width: 67%;
-  max-height: 67%;
+  max-width: 90%;
+  max-height: 90%;
   width: auto;
   height: auto;
   object-fit: contain;
@@ -489,9 +489,9 @@ footer {
 }
 
 .latest-left .video-image {
-  width: 420px;     /* pick the size you want */
+  width: 350px;     /* pick the size you want */
   max-width: 100%;
-  height: 236px;    /* 16:9-ish to look like a video slot */
+  height: 190px;    /* 16:9-ish to look like a video slot */
 }
 
 .video-image {
