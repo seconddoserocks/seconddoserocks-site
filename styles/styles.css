@@ -208,6 +208,16 @@ footer {
   text-decoration: underline;
 }
 
+.shirts-link {
+  color: #3fe0e8; /* same SDO link color */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.shirts-link:hover {
+  text-decoration: underline;
+}
+
 .divider {
   max-width: 720px;
   margin: 2rem auto;
