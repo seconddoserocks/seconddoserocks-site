@@ -211,9 +211,9 @@ footer {
 /* BLOG POSTS (posts/*.html)    */
 /* ---------------------------- */
 .blog-post {
-  max-width: 720px;                 /* readable column */
+  max-width: 720px;
   margin: 2.5rem auto;
-  text-align: left;                  /* overrides body center */
+  text-align: left;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1.02rem;
   line-height: 1.65;
@@ -232,19 +232,19 @@ footer {
   margin: 0 0 1.25rem;
 }
 
-/* Default blog image behavior */
+/* Default blog images */
 .blog-post img {
   width: 100%;
   height: auto;
-  max-width: 520px;                 /* prevents giant images */
+  max-width: 520px;
   display: block;
   margin: 1.25rem auto;
   border-radius: 10px;
 }
 
-/* Specifically for the hero image (optional) */
-.blog-hero-img {
-  max-width: 560px;
+/* ✅ ACTUAL FIX: blog hero image smaller than regular images */
+.blog-post .blog-hero-img {
+  max-width: 320px;     /* <- adjust if you want: 280 / 300 / 360 */
 }
 
 /* Divider used in blog posts */
