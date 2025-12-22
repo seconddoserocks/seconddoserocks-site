@@ -208,6 +208,18 @@ footer {
 }
 
 /* ---------------------------- */
+/* ✅ BLOG POST IMAGE CAP (FIX) */
+/* ---------------------------- */
+.blog-post img {
+  width: 100%;
+  height: auto;
+  max-width: 420px;        /* keeps posts/001 image from going huge */
+  display: block;
+  margin: 1.25rem auto;
+  border-radius: 8px;      /* optional, matches your style */
+}
+
+/* ---------------------------- */
 /* MUSIC PAGE                   */
 /* ---------------------------- */
 .content-card {
@@ -238,6 +250,17 @@ footer {
   align-items: center;
   gap: 0.5rem;
 }
+
+/* ---------------------------- */
+/* ✅ MUSIC: FEATURED IMAGE SIZE (FIX) */
+/* This targets ONLY Punk Song (latest-left), not the discography covers */
+.latest-left .video-image {
+  width: 350px;
+  height: 190px;          /* 16:9-ish slot */
+  max-width: 100%;
+}
+
+/* ---------------------------- */
 
 .latest-right {
   max-width: 520px;
