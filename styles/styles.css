@@ -208,15 +208,61 @@ footer {
 }
 
 /* ---------------------------- */
-/* ✅ BLOG POST IMAGE CAP (FIX) */
+/* BLOG POSTS (posts/*.html)    */
 /* ---------------------------- */
+.blog-post {
+  max-width: 720px;                 /* readable column */
+  margin: 2.5rem auto;
+  text-align: left;                  /* overrides body center */
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.02rem;
+  line-height: 1.65;
+  letter-spacing: 0.01em;
+  color: #e8e8e8;
+}
+
+.blog-title {
+  color: #6df0ff;
+  margin: 0 0 0.5rem;
+}
+
+.blog-date {
+  opacity: 0.55;
+  font-size: 0.85rem;
+  margin: 0 0 1.25rem;
+}
+
+/* Default blog image behavior */
 .blog-post img {
   width: 100%;
   height: auto;
-  max-width: 420px;        /* keeps posts/001 image from going huge */
+  max-width: 520px;                 /* prevents giant images */
   display: block;
   margin: 1.25rem auto;
-  border-radius: 8px;      /* optional, matches your style */
+  border-radius: 10px;
+}
+
+/* Specifically for the hero image (optional) */
+.blog-hero-img {
+  max-width: 560px;
+}
+
+/* Divider used in blog posts */
+.blog-divider {
+  border: none;
+  border-top: 1px solid #222;
+  margin: 2.5rem 0;
+}
+
+/* Fan mail block styling */
+.fan-mail {
+  border-left: 4px solid #6df0ff;
+  padding-left: 1.25rem;
+  margin: 1.25rem 0;
+}
+
+.fan-mail-note {
+  opacity: 0.6;
 }
 
 /* ---------------------------- */
@@ -251,16 +297,12 @@ footer {
   gap: 0.5rem;
 }
 
-/* ---------------------------- */
-/* ✅ MUSIC: FEATURED IMAGE SIZE (FIX) */
-/* This targets ONLY Punk Song (latest-left), not the discography covers */
+/* Targets ONLY the featured image box (Punk Song) */
 .latest-left .video-image {
   width: 350px;
-  height: 190px;          /* 16:9-ish slot */
+  height: 190px;
   max-width: 100%;
 }
-
-/* ---------------------------- */
 
 .latest-right {
   max-width: 520px;
@@ -347,8 +389,7 @@ footer {
   margin-top: 1rem;
 }
 
-/* IMPORTANT:
-   Base merch-card stays neutral (so it doesn't wreck other pages if reused) */
+/* Base merch-card */
 .merch-card {
   border: 1px solid #222;
   background: #0b0b0b;
@@ -357,7 +398,7 @@ footer {
   text-align: left;
 }
 
-/* Store-only: center the circled text + stop uppercase */
+/* Store-only: center the text under images */
 .merch-grid .merch-card {
   text-align: center;
 }
@@ -366,7 +407,7 @@ footer {
   margin: 0.75rem 0 0.25rem;
   font-size: 1rem;
   letter-spacing: 0.05em;
-  text-transform: uppercase; /* default */
+  text-transform: uppercase;
 }
 
 /* Store-only override */
@@ -381,7 +422,6 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Store-only: keep the second line centered */
 .merch-grid .merch-card p {
   text-align: center;
 }
@@ -423,7 +463,6 @@ footer {
   display: block;
 }
 
-/* Softer inner shadow */
 .video-image::after {
   content: "";
   position: absolute;
