@@ -54,6 +54,12 @@ body {
   height: auto;
 }
 
+.page-title {
+  margin: 0;
+  color: #6df0ff;
+  letter-spacing: 0.02em;
+}
+
 .tagline {
   color: #6df0ff;
   font-size: 1.1rem;
@@ -71,9 +77,241 @@ footer {
 }
 
 /* ---------------------------- */
+/* HOME: SDO BLOCK + PANELS     */
+/* ---------------------------- */
+.sdo-block {
+  margin: 0 auto 0.25rem;
+}
+
+.hero-sdo {
+  max-width: 180px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+.sdo-link {
+  display: inline-block;
+  margin-top: 0.33rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.75rem;
+  line-height: 1.2;
+  color: #6df0ff;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.sdo-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.panels {
+  display: flex;
+  justify-content: center;
+  gap: 1.1rem;
+  padding: 0.25rem 0 1rem;
+  flex-wrap: wrap;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #222;
+  padding: 1rem 1.55rem;
+  width: 225px;
+  height: 200px;
+  background: #0b0b0b;
+  text-align: left;
+}
+
+.panel h2 {
+  color: #669999;
+  margin: 0 0 0.5rem;
+}
+
+.panel p {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin: 0;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #669999;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  align-self: center;
+}
+
+/* ---------------------------- */
+/* BIO PAGE                     */
+/* ---------------------------- */
+.bio-section {
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.bio-img {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.bio-text {
+  max-width: 600px;
+  margin: 0.75rem auto;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  opacity: 0.9;
+  text-align: center;
+}
+
+.bio-signoff {
+  margin-top: 1.25rem;
+  font-weight: 500;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.bio-blog-link {
+  margin-top: 2.5rem;
+  opacity: 0.7;
+}
+
+.bio-blog-link a {
+  color: #6df0ff;
+  text-decoration: none;
+}
+
+.bio-blog-link a:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  max-width: 720px;
+  margin: 2rem auto;
+  border: none;
+  border-top: 1px solid #222;
+}
+
+/* ---------------------------- */
+/* MUSIC PAGE                   */
+/* ---------------------------- */
+.content-card {
+  border: 1px solid #222;
+  background: #0b0b0b;
+  padding: 1.25rem 1.55rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-title {
+  margin: 0 0 1rem;
+  color: #669999;
+  letter-spacing: 0.02em;
+}
+
+.latest-wrap {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.latest-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.latest-right {
+  max-width: 520px;
+  text-align: left;
+}
+
+.album-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.1rem;
+}
+
+.album-card {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  border: 1px solid #222;
+  background: #0a0a0a;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.album-meta {
+  text-align: left;
+  max-width: 560px;
+}
+
+.mini-title {
+  margin: 0 0 0.35rem;
+  color: #ddedec;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+}
+
+.body-copy {
+  margin: 0 0 0.85rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  line-height: 1.45;
+}
+
+.small-note {
+  margin: 0;
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+
+/* Platform links */
+.platform-links {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.platform {
+  display: inline-block;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid #222;
+  background: #0b0b0b;
+  color: #6df0ff;
+  text-decoration: none;
+  font-size: 0.8rem;
+  opacity: 0.85;
+  border-radius: 4px;
+}
+
+.platform:hover {
+  opacity: 1;
+  border-color: #6df0ff;
+}
+
+/* ---------------------------- */
 /* STORE GRID                   */
 /* ---------------------------- */
-
 .store-sub {
   opacity: 0.6;
   margin: 0.5rem 0 2rem;
@@ -86,24 +324,31 @@ footer {
   margin-top: 1rem;
 }
 
+/* IMPORTANT:
+   Base merch-card stays neutral (so it doesn't wreck other pages if reused) */
 .merch-card {
   border: 1px solid #222;
   background: #0b0b0b;
   padding: 1.1rem;
   border-radius: 8px;
+  text-align: left;
+}
 
-  /* ✅ FIX: center the text under the images */
+/* Store-only: center the circled text + stop uppercase */
+.merch-grid .merch-card {
   text-align: center;
 }
 
 .merch-card h3 {
   margin: 0.75rem 0 0.25rem;
   font-size: 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase; /* default */
+}
 
-  /* ✅ FIX: stop forcing uppercase */
+/* Store-only override */
+.merch-grid .merch-card h3 {
   text-transform: none;
-
-  /* optional: tighten the “shouty” spacing a bit */
   letter-spacing: 0.02em;
 }
 
@@ -111,25 +356,24 @@ footer {
   margin: 0;
   opacity: 0.7;
   font-size: 0.9rem;
+}
 
-  /* (not required, but explicit) */
+/* Store-only: keep the second line centered */
+.merch-grid .merch-card p {
   text-align: center;
 }
 
-/* ✅ THE ACTUAL FIX:
-   Force all merch frames to identical size (no cropping, just letterboxing). */
+/* Merch image frame size consistency (letterbox, no crop) */
 .merch-img {
   width: 100%;
-  aspect-ratio: 4 / 3;   /* <- pick 4/3 (or 1/1 if you want square) */
+  aspect-ratio: 4 / 3;
   border-radius: 6px;
-  overflow: hidden;      /* ensures shadow + border stay clean */
+  overflow: hidden;
 }
 
 /* ---------------------------- */
-/* FRAMED IMAGE (used by merch) */
+/* FRAMED IMAGE (music + store) */
 /* ---------------------------- */
-
-/* The frame */
 .video-image {
   width: 100%;
   height: 100%;
@@ -143,11 +387,10 @@ footer {
   align-items: center;
   justify-content: center;
 
-  padding: 10px;         /* tight-ish mat */
+  padding: 10px;
   box-sizing: border-box;
 }
 
-/* The image inside the frame (no crop) */
 .video-image img {
   max-width: 100%;
   max-height: 100%;
@@ -157,7 +400,7 @@ footer {
   display: block;
 }
 
-/* ✅ Softer inner shadow (kept) */
+/* Softer inner shadow */
 .video-image::after {
   content: "";
   position: absolute;
@@ -165,4 +408,21 @@ footer {
   pointer-events: none;
   border-radius: 6px;
   box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.35);
+}
+
+/* Album art rectangle sizing */
+.album-art {
+  min-width: 210px;
+}
+
+.album-art.cd-rect {
+  width: 260px;
+  height: 120px;
+}
+
+/* Responsive */
+@media (min-width: 860px) {
+  .album-grid {
+    grid-template-columns: 1fr;
+  }
 }
