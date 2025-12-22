@@ -178,6 +178,14 @@ footer {
   opacity: 0.9;
   text-align: center;
 }
+.bio-text a {
+  color: #3fe0e8; /* ← use the exact color from the blog link */
+  text-decoration: none;
+}
+
+.bio-text a:hover {
+  text-decoration: underline;
+}
 
 .bio-signoff {
   margin-top: 1.25rem;
