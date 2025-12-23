@@ -414,6 +414,8 @@ footer {
   padding: .5rem;
   border-radius: 8px;
   text-align: left;
+      margin-bottom: 1.75rem;
+
 }
 
 /* Store-only: center the text under images */
