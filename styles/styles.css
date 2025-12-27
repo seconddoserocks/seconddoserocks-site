@@ -510,3 +510,27 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+.jh-media {
+  display: flex;
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+
+.jh-media img {
+  width: 50%;
+  height: auto;
+  border: 1px solid #222;
+  border-radius: 6px;
+}
+
+/* Mobile: stack vertically */
+@media (max-width: 700px) {
+  .jh-media {
+    flex-direction: column;
+  }
+
+  .jh-media img {
+    width: 100%;
+  }
+}
